@@ -22,11 +22,12 @@ planateer_calls.any? { |call| call.length > 4}
 end
 
 maybe_cheesy_items = %w[umbrella spinach cheddar helicopter]
-def find_the_cheese(maybe_cheesy_items)
+
+def find_the_cheese(fancy)
   cheeses = %w[gouda cheddar camembert]
 
-  maybe_cheesy_items.find do |maybe_cheese|
-    cheeses.include?(maybe_cheese)
+fancy.find do |maybe_fancy| cheeses.include?(maybe_fancy)
+  
   end
 end
-find_the_cheese(maybe_cheesy_items)
+
